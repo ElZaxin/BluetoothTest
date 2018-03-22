@@ -39,7 +39,6 @@ public class ServerActivity extends AppCompatActivity {
         thread.start();
         //make the textview
         textView = findViewById(R.id.textView);
-        textView.setText("connected");
         }
     public void manageMyConnectedSocket(BluetoothSocket socket) {
         textView.setText("connected");
