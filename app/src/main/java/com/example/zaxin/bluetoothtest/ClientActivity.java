@@ -60,7 +60,8 @@ public class ClientActivity extends AppCompatActivity {
 
             try {
                 // Connect to the remote device through the socket. This call blocks
-                // until it succeeds or throws an exception.                mmSocket.connect();
+                // until it succeeds or throws an exception.
+                mmSocket.connect();
             } catch (IOException connectException) {
                 // Unable to connect; close the socket and return.
                 try {
