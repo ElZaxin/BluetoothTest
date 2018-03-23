@@ -1,21 +1,16 @@
 package com.example.zaxin.bluetoothtest;
 
 import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothServerSocket;
 import android.bluetooth.BluetoothSocket;
-import android.content.Context;
 import android.content.Intent;
-import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 import java.io.IOException;
-import java.util.UUID;
 
 public class ServerActivity extends AppCompatActivity {
 
@@ -69,7 +64,6 @@ public class ServerActivity extends AppCompatActivity {
                     Log.e("a", "Socket's accept() method failed", e);
                     break;
                 }
-
                 if (socket != null) {
                     // A connection was accepted. Perform work associated with
                     // the connection in a separate thread.
